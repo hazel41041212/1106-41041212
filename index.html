@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的作品集</title>
+    <!-- 引入 Bootstrap 的 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container-fluid {
+            flex: 1;
+        }
+
+        .footer {
+            background-color: #bedaf8;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer a {
+            margin: 0 10px;
+            color: #58297e;
+        }
+
+        .carousel-img {
+            height: 100vh;
+            /* 使圖片高度滿版 */
+            object-fit: cover;
+            /* 使圖片填滿容器並保持比例 */
+        }
+
+        .card-img {
+            width: 400px;
+            /* 固定寬度 */
+            height: 300px;
+            /* 固定高度 */
+            object-fit: cover;
+            /* 使圖片填滿容器並保持比例 */
+        }
+
+        .card-img-top {
+            width: 100%;
+            /* 確保圖片寬度填滿卡片 */
+            height: 200px;
+            /* 固定圖片高度 */
+            object-fit: cover;
+            /* 使圖片保持比例並填滿容器 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 功能列 (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">我的作品集</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="切換導航">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">關於我</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">作品集</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">聯絡我</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 輪播 (Carousel) -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <!-- 圓點式進度條 -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpeg" class="d-block w-100 carousel-img" alt="林間公路">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>林間公路</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpeg" class="d-block w-100 carousel-img" alt="田園">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>自山頂俯瞰</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpeg" class="d-block w-100 carousel-img" alt="雪山底">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>雪山山間小屋</h5>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div class="container">
+        <h1 class="mt-5 text-center">我的作品集</h1>
+    </div>
+
+    <!-- 卡片 (Card) 元素 -->
+    <div class="container mt-4" id="portfolio">
+        <div class="row">
+
+            <!-- 卡片1 剪刀石頭布 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="4.jpeg" class="card-img-top" alt="剪刀石頭布">
+                    <div class="card-body">
+                        <h5 class="card-title">剪刀石頭布</h5>
+                        <p class="card-text">這是經典的剪刀石頭布遊戲，與電腦對戰來看看誰能贏得比賽。</p>
+                        <a href="https://hazel41041212.github.io/0918-41041212/" class="btn btn-primary">遊玩</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片2 圖片配對遊戲 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="5.jpeg" class="card-img-top" alt="圖片配對遊戲">
+                    <div class="card-body">
+                        <h5 class="card-title">圖片配對遊戲</h5>
+                        <p class="card-text">圖片配對遊戲是一款考驗記憶力和觀察力的益智遊戲。挑戰自己的記憶力，快速配對相同的圖片。</p>
+                        <a href="https://hazel41041212.github.io/1009-41041212/" class="btn btn-primary">遊玩</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片3 打磚塊遊戲 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="/images/打磚塊.JPG" class="card-img-top" alt="打磚塊遊戲">
+                    <div class="card-body">
+                        <h5 class="card-title">打磚塊遊戲</h5>
+                        <p class="card-text">打磚塊遊戲是一款經典的街機遊戲，遊戲充滿挑戰性。</p>
+                        <a href="https://hazel41041212.github.io/1023-41041212/"
+                            class="btn btn-primary">遊玩</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片4 JS套件介紹 -->
+            <div class="col-lg-4 col-md-6 mt-4">
+                <div class="card">
+                    <img src="/images/javascript.png" class="card-img-top" alt="JS套件介紹">
+                    <div class="card-body">
+                        <h5 class="card-title">JS套件介紹</h5>
+                        <p class="card-text">一個介紹跟JavaScript有關的10個套件的網頁。</p>
+                        <a href="https://hazel41041212.github.io/1030-41041212/"
+                            class="btn btn-primary">查看</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center">我分享的 YouTube 影片</h2>
+        <div class="row">
+            <!-- 影片 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/WIm1GgfRz6M?si=EQoYTm4BS3XNVN2y"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- 影片 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/5FrhtahQiRc?si=v5lLeB-GCicGum93"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- 影片 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/RqzO_t8ZV3M?si=HB5-JAvE8ZvoYPQo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>聯絡方式: 41041212@gm.nfu.edu.tw</p>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://line.me" target="_blank"><i class="fab fa-line"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <p class="mt-3">版權所有 &copy; 2024 我的作品集</p> <!-- 版權聲明 -->
+        </div>
+    </footer>
+
+    <!-- 引入 Bootstrap 的 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const carousel = document.getElementById('carouselExample');
+        const items = carousel.querySelectorAll('.carousel-item');
+
+        // 更新進度條
+        const updateProgressBar = (index) => {
+            const percentage = ((index + 1) / items.length) * 100;
+            progressBar.style.width = `${percentage}%`;
+        };
+
+        carousel.addEventListener('slide.bs.carousel', (event) => {
+            updateProgressBar(event.to);
+        });
+
+        // 初始化進度條
+        updateProgressBar(0);
+    </script>
+
+</body>
+
+</html>
